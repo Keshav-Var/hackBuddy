@@ -6,13 +6,14 @@
   "type": "module",
   "description": "HackBuddy – Your AI-powered Hackathon Idea Validator and Planner",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "deploy": "gh-pages -d dist",
+    "start": "react-scripts",
+    "dev": "react-scripts",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "build:dev": "react-scripts build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "react-scripts preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
