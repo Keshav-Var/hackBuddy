@@ -67,6 +67,9 @@ export const useAuth = () => {
 const signInWithGoogle = async () => {
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
+    options: {
+      redirectTo: 'https://hackbuddy.netlify.app'
+    }
   });
   return { error };
 };
