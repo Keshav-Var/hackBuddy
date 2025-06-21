@@ -6,8 +6,8 @@
   "type": "module",
   "description": "HackBuddy – Your AI-powered Hackathon Idea Validator and Planner",
   "scripts": {
-    "start": "react-scripts",
-    "dev": "react-scripts",
+    "start": "react-scripts start",
+    "dev": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
