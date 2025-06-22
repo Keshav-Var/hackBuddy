@@ -4,7 +4,7 @@
 
 **HackBuddy** helps developers validate hackathon ideas, generate MVP development roadmaps, and match with potential teammates — all powered by AI.
 
-🔗 **Live App**: [https://hackathon-mvp-architect.lovable.app](https://hackathon-mvp-architect.lovable.app)
+🔗 **Live App**: [https://hackbuddy.netlify.app/](https://hackbuddy.netlify.app/)
 
 ---
 
