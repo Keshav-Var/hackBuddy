@@ -103,7 +103,7 @@ Consider beginner-friendly approaches and realistic time constraints. Be encoura
 
     setIsLoading(true);
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCdJSfrUN8DIZZta1N8oOvddW3ZwC_uSgc`, {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
