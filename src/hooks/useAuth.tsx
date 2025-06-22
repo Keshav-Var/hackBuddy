@@ -52,28 +52,17 @@ export const useAuth = () => {
     return { error };
   };
 
-  // const signInWithGoogle = async () => {
-  //   const redirectUrl = `${window.location.origin}/`;
+  const signInWithGoogle = async () => {
+    const redirectUrl = `${window.location.origin}/`;
     
-  //   const { error } = await supabase.auth.signInWithOAuth({
-  //     provider: 'google',
-  //     options: {
-  //       redirectTo: redirectUrl
-  //     }
-  //   });
-  //   return { error };
-  // };
-
-const signInWithGoogle = async () => {
-  const { error } = await supabase.auth.signInWithOAuth({
-    provider: 'google',
-    options: {
-      redirectTo: 'https://hackbuddy.netlify.app/'
-    }
-  });
-  return { error };
-};
-
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: redirectUrl
+      }
+    });
+    return { error };
+  };
 
   const signOut = async () => {
     const { error } = await supabase.auth.signOut();
